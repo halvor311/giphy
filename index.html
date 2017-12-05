@@ -8,12 +8,17 @@
         <button data-animal= "lion">lions</button>
         <button data-animal= "tiger">tigers</button>
         <button data-animal= "bear">bears</button>
-        <div class="form-group">
+        <!-- <div class="form-group">
                 <label for="search">Search</label>
                 <input type="text" class="form-control" id="search">
                 <button type="submit" class="btn btn-default" id="search-btn">Search an Animal</button>
-            </div>
-        
+            </div> -->
+        <form id="animal-form">
+            <label for="animal-input">Add an Animal</label>
+            <input type="text" id="animal-input">
+            <input id="add-animal" type="submit" value="Add an animal">
+        </form>
+        <div id="animals-view"></div>
         <div id = "gifsHere"></div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script src="giphy.js"></script>      
