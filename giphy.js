@@ -47,7 +47,12 @@ $(document).ready(function(){
         }
     
     })
-    
+    //creating a search button and getting it to add more buttons.
+    $("#search-btn").on("click", function(){
+        event.preventDefault();
+        queryTerm =$("#search").val().trim();
+        var newURL = queryURLBase + "&q=" + queryTerm;
+    })
 })
 // $(animalImage).on("click", function(){
 //     if (state==="animate"){
